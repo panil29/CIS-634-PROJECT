@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
+          <h1>Bettter Performance and Better Feedback based on Machine Learning </h1>
+          <h2>In this, we mainly focus on the analysis of the students’
+            performance in academics not only external exams, but
+            also the overall academic performance of each and every
+            student </h2>
+         </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="{% static 'assets/img/hero-img.svg' %}" class="img-fluid animated" alt="">
+        
+        </div>
+      </div>
+    </div>
+       
+  </section><!-- End Hero -->
+
+{% endblock content %}
