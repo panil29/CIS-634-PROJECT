@@ -27,7 +27,7 @@ def passPrediction():
     return classifier
 
 def cnsmarksPredict():
-    df=pd.read_csv("C:\\Users\\gana\\ram\\academic.csv")
+    df=pd.read_csv("academic.csv")
 
     train,test=train_test_split(df,test_size=0.2)
 
