@@ -1,0 +1,49 @@
+{% extends 'base3.html' %}
+{% load static %}
+{% block content %} 
+
+  <main id="main">
+
+    <!-- ======= About Section ======-->
+    <section id="about" class="about">
+      <div class="container">
+
+         <h2>Your Internal Marks</h2>
+
+         <table class="table table-striped">
+             <tr>
+                
+                 <th>
+                    CNS
+                </th>
+                <th>
+                    UML
+                </th>
+                <th>
+                    MC
+                </th>
+                <th>
+                    STM
+                </th>
+                <th>
+                    HBD
+                </th>
+                <th>
+                    attendance
+                </th>
+             </tr>
+             <tr>
+                 {% for i in df %}
+                  <td>{{i}}</td>
+                 {% endfor %}
+             </tr>
+
+
+         </table>
+      </div>
+    </section><!-- End About Section -->
+
+    
+   
+  </main><!-- End #main -->
+{% endblock content %}
